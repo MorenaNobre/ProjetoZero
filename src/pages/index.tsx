@@ -29,12 +29,13 @@ interface HomeProps {
 }
 
 export default function Home() {
-  <>
+  return (
+    <>
     <main className={commonStyles.container}>
       <Header />
       <div className={styles.posts}>
         <Link href="/">
-          <a>
+          <a className={styles.post}>
             <strong>Algo aqui</strong>
             <p>Algo aqui</p>
             <ul>
@@ -49,9 +50,27 @@ export default function Home() {
             </ul>
           </a>
         </Link>
+        <Link href="/">
+          <a className={styles.post}>
+            <strong>Algo aqui</strong>
+            <p>Algo aqui</p>
+            <ul>
+              <li>
+                <FiCalendar />
+                16 fev 2022
+              </li>
+              <li>
+                <FiUser />
+                Morena Nobre
+              </li>
+            </ul>
+          </a>
+        </Link>
+        <button type="button">Carregar mais posts</button>
       </div>
     </main>
   </>
+  )
 }
 
 // export const getStaticProps = async () => {
