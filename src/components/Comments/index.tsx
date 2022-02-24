@@ -9,7 +9,7 @@ export default class Comments extends Component {
     script.setAttribute('async', 'true');
     script.setAttribute('repo', 'MorenaNobre/ProjetoZero');
     script.setAttribute('issue-term', 'pathname');
-    script.setAttribute('theme', 'github-dark');
+    script.setAttribute('theme', 'photon-dark');
     anchor.appendChild(script);
   }
 
